@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Super Hero Hunter App | Homepage</title>
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon-logo.png"
+			type="image/x-icon"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link rel="stylesheet" href="./assets/css/general.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/media-query.css" />
+		<!-- Fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/34162fcf4d.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Scripts -->
+		<script defer src="./assets/js/index/Module.js"></script>
+		<script defer src="./assets/js/index/Script.js"></script>
+	</head>
+	<body>
+		<!-- ---------------------Header--------------------- -->
+		<header class="container-fluid homepage-header">
+			<!-- ---------------------Intro Videos--------------------- -->
+			<!-- Video 1 -->
+			<video
+				src="./assets/videos/intro1.mp4"
+				class="hide headerVideo"
+				muted
+			></video>
+			<!-- Video 2 -->
+			<video
+				src="./assets/videos/intro2.mp4"
+				muted
+				class="hide headerVideo"
+			></video>
+			<!-- Video 3 -->
+			<video
+				src="./assets/videos/intro4.mp4"
+				muted
+				class="hide headerVideo"
+			></video>
+			<!-- Video 4 -->
+			<video
+				src="./assets/videos/intro5.mp4"
+				muted
+				class="hide headerVideo"
+			></video>
+			<!-- Video 5 -->
+			<video
+				src="./assets/videos/intro6.mp4"
+				muted
+				class="hide headerVideo"
+			></video>
+			<!-- ---------------------Navbar--------------------- -->
+			<nav class="navbar navbar-expand container-fluid">
+				<!-- ---------------------Wrapper--------------------- -->
+				<div
+					class="wrapper container-fluid d-flex flex-column justify-content-center align-items-center position-relative"
+					id="wrapper"
+				>
+
+					<div
+						class="toast position-absolute"
+						role="alert"
+						aria-live="assertive"
+						aria-atomic="true"
+					>
+						<div class="toast-header">
+
+							<strong class="me-auto text-capitalize"></strong>
+
+							<small>Just Now</small>
+						</div>
+
+						<div class="toast-body text-capitalize">
+							<b></b>
+						</div>
+					</div>
+					<a class="navbar-brand navbar-expand-lg" href="./index.html">
+						<h1 class="logo">
+							<img
+								src="./assets/images/icon.png"
+								id="logo-img"
+								alt="Super Hero Icon"
+							/>
+							&nbsp;&nbsp;Super Hero Hunter App
+						</h1>
+					</a>
+					<div class="collapse navbar-collapse m-5" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="./callforhelp-page.html"
+									>Call For Help</a
+								>
+							</li>
+							<!-- Link 2 -->
+							<li class="nav-item m-5">
+								<a class="nav-link" href="./superheroquotes-page.html"
+									>Superhero Quotes</a
+								>
+							</li>
+							<!-- Link 3 -->
+							<li class="nav-item">
+								<a class="nav-link" href="./favourites-page.html"
+									>Favourites</a
+								>
+							</li>
+						</ul>
+					</div>
+					<form
+						id="search-form"
+						class="d-flex flex-row align-items-start justify-content-evenly form mt-0"
+					>
+						<div class="search-box">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+								id="search-input"
+								autocomplete="off"
+							/>
+							<ul class="autocomplete-box"></ul>
+						</div>
+						<a class="btn search-btn" id="search-button"> Search </a>
+					</form>
+				</div>
+			</nav>
+		</header>
+		<div class="container-fluid superhero-showcase">
+			<!-- Image 1 -->
+			<section class="img"></section>
+			<!-- Image 2 -->
+			<section class="img"></section>
+			<!-- Image 3 -->
+			<section class="img"></section>
+		</div>
+		<div class="container-fluid superhero-card">
+			<div class="card">
+				<div class="description strange">
+					<h3>Doctor Strange</h3>
+					<br />
+					<p>
+						As a Master of the Mystic Arts, Doctor Strange possesses
+						incredible magical knowledge and power, able to conjure
+						powerful spells within moments.
+					</p>
+				</div>
+				<img
+					src="./assets/images/doctorstrange.png"
+					alt="Super Hero Card"
+				/>
+			</div>
+			<div class="card">
+				<div class="description">
+					<h3>SpiderMan</h3>
+					<br />
+					<p>
+						With amazing spider-like abilities, teenage science whiz Peter
+						Parker fights crime and dreams of becoming an Avenger as
+						Spider-Man.
+					</p>
+				</div>
+				<img src="./assets/images/spiderman2.png" alt="Super Hero Card" />
+			</div>
+		</div>
+		<footer class="container-fluid">
+			<video src="./assets/videos/intro3.mp4" class="footerVideo"></video>
+			<h1 id="footer-h1">
+				Hecho para <b>Edgar Fitec prueba de seleccion</b> por
+				<b>Andres F. Rodriguez</b>
+			</h1>
+			<div class="links">
+				<a id="contact" href="andresfra65@gmail.com@gmail.com">Contact Us</a>
+				&nbsp;|&nbsp;
+				<a id="about" href="#">About Us</a>
+			</div>
+		</footer>
+		<div class="template">
+			<ul>
+				<li
+					class="d-flex justify-content-between align-items-center list"
+					data-id=""
+					data-image-url=""
+				>
+					<div>
+						<img
+							src="./assets/images/search.png"
+							alt=""
+							onerror="this.onerror=null; this.src='./assets/images/search.png'"
+						/>
+						<span></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
